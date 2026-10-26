@@ -21,6 +21,8 @@ print(df[['quantity','price']].describe())  # 一次性看数值列的常用统�
 print('\n===按地区分组计数===')
 print(df.groupby('region').size())  # 按地区分组计数（每个地区多少条记录）
 
+
+
 print('\n===按地区聚合===') #按地区统计数量总和与单价均值
 print(df.groupby('region').agg(
     order_count=('quantity', 'size'), #按分组后每组quantity的个数来计数
