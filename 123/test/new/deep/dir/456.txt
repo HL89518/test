@@ -1,0 +1,2 @@
+./123/test/new/deep/dir 
+ this is a txt file
